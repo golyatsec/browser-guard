@@ -30,5 +30,3 @@ Katkıda bulunmak için GitHub deposunu ziyaret edebilir ve pull request gönder
 ## Lisans
 
 Bu proje MIT Lisansı altında lisanslanmıştır.
-
-Bu örnek README dosyası, projeyle ilgili temel bilgileri ve kullanıcıların ve geliştiricilerin projeyi nasıl kullanabileceğine dair bilgileri içerir. README dosyasını projenizin ihtiyaçlarına göre özelleştirebilir ve genişletebilirsiniz.
