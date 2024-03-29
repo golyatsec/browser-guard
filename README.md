@@ -8,9 +8,9 @@ Eklenti, önceden belirlenmiş bir phishing domain listesini alır ve bu domainl
 
 ## Özellikler
 
-Phishing domain listesinden otomatik olarak güncellenen koruma
-Kullanıcı dostu ve hafif tasarım
-Kullanıcıların güvenliğini ön planda tutan basit ve etkili bir çözüm
+- Phishing domain listesinden otomatik olarak güncellenen koruma
+- Kullanıcı dostu ve hafif tasarım
+- Kullanıcıların güvenliğini ön planda tutan basit ve etkili bir çözüm
 
 ## Kurulum
 
