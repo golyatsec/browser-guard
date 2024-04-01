@@ -1,0 +1,28 @@
+body {
+    background-color: #a4bfed; /* Hafif yeşilimsi arka plan */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #ffffffce; /* Beyaz arka plan */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Hafif gölgelendirme */
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto; /* Sayfa ortalanır */
+}
+
+.icon {
+    display: block;
+    margin: 0 auto; /* İkonu ortala */
+    width: 60px; /* İkon boyutu */
+    height: 60px;
+    margin-bottom: 20px; /* İkon altındaki boşluk */
+}
+
+h1 {
+    color: #2d7ebb; /* Başlık rengi */
+    margin-bottom: 10px; /* Başlık altındaki boşluk */
+}
