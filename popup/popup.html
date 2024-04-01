@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golyatsec Browser Guard</title>
+    <link rel="stylesheet" href="/popup/css/popup.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Golyatsec Browser Guard</h1>
+        <p>You are protected while browsing this site.</p>
+        <div id="phishingDomainsCount">Loading...</div>
+        <div id="blockedDomainContainer">
+            <p>Blocked Domain:</p> <span id="blocked-domain"></span>
+        </div>
+        <script src="/popup/popup.js"></script>
+    </div>
+    <div class="container">
+        <div class="blink"></div>
+        <div class="label">Protected!</div>
+    </div>
+    
+    <div class="footer">
+        <div class="version">Version 1.4</div>
+        <div class="copy">&copy; 2024 Golyatsec Inc.</div>
+    </div>
+</body>
+</html>

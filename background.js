@@ -2,7 +2,7 @@ var domains;
 
 async function updateRules() {
     try {
-        const response = await fetch(chrome.runtime.getURL('phishing_domains.json'));
+        const response = await fetch(chrome.runtime.getURL('/database/phishing_domains.json'));
         const data = await response.json();
         domains = data.domains;
 
@@ -32,7 +32,7 @@ chrome.webRequest.onBeforeRequest.addListener(
     function(details) {
         const requestedDomain = new URL(details.url).hostname;
         if (isPhishingDomain(requestedDomain)) {
-            return { redirectUrl: chrome.runtime.getURL("blocked.html") };
+            return { redirectUrl: chrome.runtime.getURL("/security/blocked.html") };
         }
     },
     { urls: ["<all_urls>"], types: ["main_frame"] },
@@ -45,7 +45,7 @@ function isPhishingDomain(domain) {
 
 chrome.runtime.onMessage.addListener(function(message) {
     if (message.type === "blocked_domain") {
-        const blockedDomain = message.domain;
-        document.getElementById("blocked-domain").textContent = blockedDomain;
-    }
+       const blockedDomain = message.domain;
+       chrome.storage.local.set({ "blockedDomain": blockedDomain });
+   }
 });
